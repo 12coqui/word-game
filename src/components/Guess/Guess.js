@@ -5,7 +5,6 @@ function Guess({ guess, answer }) {
 	const cols = Array.from({ length: 5 }, (_, index) => index);
 
 	const result = checkGuess(guess, answer);
-	console.log({ result });
 	return (
 		<div className='guess'>
 			{cols.map(num => (

@@ -17,8 +17,6 @@ function Game() {
 	const [gameStatus, setGameStatus] = React.useState('playing');
 	const [modalStatus, setModalStatus] = React.useState('hidden');
 
-	console.log({ gameStatus });
-
 	useEffect(() => {
 		function handleKeyDown(event) {
 			if (event.key === 'Escape') {
@@ -68,7 +66,7 @@ function Game() {
 					title={gameStatus === 'won' ? 'Congratulations!' : 'Game Over'}
 					message={
 						gameStatus === 'won'
-							? `You won in ${guesses} ${guesses != 1 ? 'guesses' : 'guess'}!`
+							? `You won in ${guesses.length} ${guesses.length != 1 ? 'guesses' : 'guess'}!`
 							: `You lost! The correct answer was ${answer}.`
 					}
 					gameStatus={gameStatus}
