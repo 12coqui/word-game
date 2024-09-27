@@ -51,7 +51,7 @@ export function Input({ guesses, setGuesses, gameStatus, setGameStatus, answer, 
 					default: ['Q W E R T Y U I O P {bksp}', 'A S D F G H J K L {enter}', 'Z X C V B N M'],
 				}}
 				display={{
-					'{bksp}': 'Delete',
+					'{bksp}': 'Del',
 					'{enter}': 'Enter',
 				}}
 			/>
